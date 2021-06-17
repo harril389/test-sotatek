@@ -72,8 +72,8 @@ const Task = (props) => {
     <form className="root-task" onSubmit={onSubmit}>
       <div className="body">
         <Input
-          placeHolder="nhap text"
-          notification="phai nhap"
+          placeHolder="Add new task"
+          notification="cannot be left blank"
           name="title"
           value={data?.title || ""}
           onInput={(name, value) => onChange(name, value)}
@@ -82,7 +82,7 @@ const Task = (props) => {
         <div className="box-description">
           <div>Description</div>
           <InputArea
-            placeHolder="nhap text"
+            placeHolder="Add new description"
             name="description"
             cols={40}
             rows={10}
@@ -93,8 +93,8 @@ const Task = (props) => {
         <div className="box-select">
           <div className="col">
             <Input
-              placeHolder="nhap text"
-              notification="phai nhap"
+              placeHolder="due date"
+              notification="cannot be left blank"
               type="date"
               name="dueDate"
               value={getDate(data?.dueDate) || ""}
