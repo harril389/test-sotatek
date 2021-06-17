@@ -1,0 +1,36 @@
+$color-000000a6: #000000a6;
+$color-ffffff: #ffffff;
+$color-d9d9d9: #d9d9d9;
+$color-40a9ff: #40a9ff;
+$color-1890ff33: #1890ff33;
+
+.root-to-do-list {
+  width: 100%;
+  border: 1px solid $color-d9d9d9;
+  border-radius: 4px;
+  padding: 15px;
+  box-sizing: border-box;
+  .title {
+    width: 100%;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+  }
+  .search {
+    height: 34px;
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    color: $color-000000a6;
+    background-color: $color-ffffff;
+    border-radius: 4px;
+    border: 1px solid $color-d9d9d9;
+  }
+  .search:focus {
+    outline: none;
+    border-color: $color-40a9ff;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px $color-1890ff33;
+    box-shadow: 0 0 0 2px $color-1890ff33;
+  }
+}

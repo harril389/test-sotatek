@@ -1,0 +1,20 @@
+.root-task {
+  width: 100%;
+  .body {
+    .box-description {
+      width: 100%;
+    }
+    .box-select {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      .col {
+        width: 47%;
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    margin-top: 70px;
+  }
+}

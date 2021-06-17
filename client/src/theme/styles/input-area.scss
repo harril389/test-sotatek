@@ -1,0 +1,22 @@
+$color-ffffff: #ffffff;
+$color-d9d9d9: #d9d9d9;
+$color-40a9ff: #40a9ff;
+$color-1890ff33: #1890ff33;
+
+.root-textarea {
+  background-color: $color-ffffff;
+  border-radius: 4px;
+  border: 1px solid $color-d9d9d9;
+  width: 100%;
+  box-sizing: border-box;
+}
+.root-textarea::placeholder {
+  color: $color-d9d9d9;
+}
+.root-textarea:focus {
+  outline: none;
+  border-color: $color-40a9ff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px $color-1890ff33;
+  box-shadow: 0 0 0 2px $color-1890ff33;
+}

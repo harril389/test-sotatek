@@ -1,0 +1,17 @@
+$color-ffffff: #ffffff;
+$color-009fb6: #009fb6;
+
+.root-button {
+  width: 100%;
+  border: none;
+  color: $color-ffffff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.root-button:focus {
+  outline: none;
+}
+.root-button:hover {
+  background-color: $color-009fb6;
+}

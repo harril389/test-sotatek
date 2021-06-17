@@ -1,0 +1,25 @@
+$color-e0e0e0: #e0e0e0;
+
+.root-bulk-action {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  background-color: $color-e0e0e0;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  .title-bulk-action {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: 500;
+  }
+  .box-button-bulk-action {
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 100px;
+    }
+  }
+}
