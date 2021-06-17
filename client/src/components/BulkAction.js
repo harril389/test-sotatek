@@ -6,9 +6,8 @@ const BulkAction = (props) => {
   const onDelete = () => {
     let dataStorage = getStorage("task");
     if (dataStorage) {
-      let newData = dataStorage.data;
-      newData.map(
-        (element, index) => element.checked === true && newData.splice(index, 1)
+      let newData = dataStorage.data.filter(
+        (element) => element.checked === !true
       );
       setStorage("task", { data: newData });
       window.location.reload();
